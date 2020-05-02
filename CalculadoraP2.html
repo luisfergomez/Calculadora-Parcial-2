@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Operacion de variables</title>
+</head>
+<body>
+    <h1>Operacion de variables</h1>
+
+    <p>Pagina que tiene un programa que recibe 3 variables y tiene la capacidad para sumarlas, restarlas, multiplicarlas y dividirlas en números enteros con solo presionar un boton</p>
+        <!-- inputs para recibir las variables -->
+        <label for="a">Ingrese el primer número</label>
+        <input type="number" id="a" name="a"><br>
+    
+        <label for="b">Ingrese el segundo número</label>
+        <input type="number" id="b" name="b"><br>
+
+        <label for="c">Ingrese el tercer número</label>
+        <input type="number" id="c" name="c"><br>
+    
+        <!-- boton que llamará a la funcion sumar -->
+        <button onclick="sumar()">sumar</button>
+        <button onclick="restar()">restar</button>
+        <button onclick="multiplicar()">multiplicar</button>
+        <button onclick="dividir()">dividir</button><br>
+    
+        <!-- campo donde se mostrará el resultado -->
+        <label for="resultado">Resultado de la operación matematica</label>
+        <input type="number" id="resultado" name="resultado">
