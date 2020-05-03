@@ -3,12 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Operacion de variables</title>
+    <title>Programa de operaciones matematicas</title>
 </head>
 <body>
-    <h1>Operacion de variables</h1>
+    <center>
+    <h1>Programa de operaciones matematicas</h1>
 
-    <p>Pagina que tiene un programa que recibe 3 variables y tiene la capacidad para sumarlas, restarlas, multiplicarlas y dividirlas en números enteros con solo presionar un boton</p>
+    <p>Pagina que tiene un programa que recibe 3 variables las cuales se engresaran en los campos disponibles y tiene la capacidad para operar sumas, restas, multiplicaciónes y diviciones; dando resultado en números enteros con solo presionar un boton</p>
         <!-- inputs para recibir las variables -->
         <label for="a">Ingrese el primer número</label>
         <input type="number" id="a" name="a"><br>
@@ -50,7 +51,7 @@
                 }else{
                     a = parseInt( a );
                 }
-    
+
                 if(b == "" ){
                     b = 0;
                 }else{
@@ -71,124 +72,125 @@
             }
             function restar(){
     
-    //capturar los valores de los inputs y guardamos en variables
-    var a = document.getElementById("a").value ;
-    var b = document.getElementById("b").value ;
-    var c = document.getElementById("c").value ;
+                //capturar los valores de los inputs y guardamos en variables
+                 var a = document.getElementById("a").value ;
+                 var b = document.getElementById("b").value ;
+                 var c = document.getElementById("c").value ;
 
-    //definimos la variable de de salida
-    var resulado;
+                //definimos la variable de de salida
+                var resulado;
 
 
-    console.log( a )
-    console.log( b )
-    console.log( c )
+                console.log( a )
+                console.log( b )
+                console.log( c )
 
-    //verificar si las casillas de las variables estan en blanco
-    if(a == "" ){
-        a = 0;
-    }else{
-        a = parseInt( a );
-    }
+                //verificar si las casillas de las variables estan en blanco
+                if(a == "" ){
+                    a = 0;
+                }else{
+                    a = parseInt( a );
+                }
 
-    if(b == "" ){
-        b = 0;
-    }else{
-        b = parseInt( b );
-    }
-    if(c == "" ){
-        c = 0;
-    }else{
-        c = parseInt( c );
-    }
+                if(b == "" ){
+                    b = 0;
+                }else{
+                    b = parseInt( b );
+                }
+                if(c == "" ){
+                    c = 0;
+                }else{
+                    c = parseInt( c );
+                }
+                
+                //realizamos la resta
+                resultado = a - b - c;
+
+                //mostramos el resultado
+                document.getElementById("resultado").value = resultado;
+
+            }       
+            function multiplicar(){
     
-    //realizamos la resta
-    resultado = a - b - c;
+                //capturar los valores de los inputs y guardamos en variables
+                var a = document.getElementById("a").value ;
+                var b = document.getElementById("b").value ;
+                var c = document.getElementById("c").value ;
 
-    //mostramos el resultado
-    document.getElementById("resultado").value = resultado;
+                //definimos la variable de de salida
+                var resulado;
 
-}
-function multiplicar(){
+
+                console.log( a )
+                console.log( b )
+                console.log( c )
+
+                //verificar si las casillas de las variables estan en blanco
+                if(a == "" ){
+                    a = 0;
+                }else{
+                    a = parseInt( a );
+                }
+
+                if(b == "" ){
+                    b = 0;
+                }else{
+                    b = parseInt( b );
+                }
+                if(c == "" ){
+                    c = 0;
+                }else{
+                    c = parseInt( c );
+                }
+                
+                //realizamos la multiplicación
+                resultado = a * b * c;
+
+                //mostramos el resultado
+                document.getElementById("resultado").value = resultado;
+
+            }
+            function dividir(){
     
-    //capturar los valores de los inputs y guardamos en variables
-    var a = document.getElementById("a").value ;
-    var b = document.getElementById("b").value ;
-    var c = document.getElementById("c").value ;
+                //capturar los valores de los inputs y guardamos en variables
+                var a = document.getElementById("a").value ;
+                var b = document.getElementById("b").value ;
+                var c = document.getElementById("c").value ;
 
-    //definimos la variable de de salida
-    var resulado;
-
-
-    console.log( a )
-    console.log( b )
-    console.log( c )
-
-    //verificar si las casillas de las variables estan en blanco
-    if(a == "" ){
-        a = 0;
-    }else{
-        a = parseInt( a );
-    }
-
-    if(b == "" ){
-        b = 0;
-    }else{
-        b = parseInt( b );
-    }
-    if(c == "" ){
-        c = 0;
-    }else{
-        c = parseInt( c );
-    }
-    
-    //realizamos la multiplicación
-    resultado = a * b * c;
-
-    //mostramos el resultado
-    document.getElementById("resultado").value = resultado;
-
-}
-function dividir(){
-    
-    //capturar los valores de los inputs y guardamos en variables
-    var a = document.getElementById("a").value ;
-    var b = document.getElementById("b").value ;
-    var c = document.getElementById("c").value ;
-
-    //definimos la variable de de salida
-    var resulado;
+                //definimos la variable de de salida
+                var resulado;
 
 
-    console.log( a )
-    console.log( b )
-    console.log( c )
+                console.log( a )
+                console.log( b )
+                console.log( c )
 
-    //verificar si las casillas de las variables estan en blanco
-    if(a == "" ){
-        a = 0;
-    }else{
-        a = parseInt( a );
-    }
+                //verificar si las casillas de las variables estan en blanco
+                if(a == "" ){
+                    a = 0;
+                }else{
+                    a = parseInt( a );
+                }
 
-    if(b == "" ){
-        b = 0;
-    }else{
-        b = parseInt( b );
-    }
-    if(c == "" ){
-        c = 0;
-    }else{
-        c = parseInt( c );
-    }
-    
-    //realizamos la divición
-    resultado = a / b / c;
+                if(b == "" ){
+                    b = 0;
+                }else{
+                    b = parseInt( b );
+                }
+                if(c == "" ){
+                    c = 0;
+                }else{
+                    c = parseInt( c );
+                }
+                
+                //realizamos la divición
+                resultado = a / b / c;
 
-    //mostramos el resultado
-    document.getElementById("resultado").value = resultado;
+                //mostramos el resultado
+                document.getElementById("resultado").value = resultado;
 
 }
         </script>
+    </center>
 </body>
 </html>
